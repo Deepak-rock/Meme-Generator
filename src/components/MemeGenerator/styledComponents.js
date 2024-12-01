@@ -105,4 +105,5 @@ export const TextContent = styled.p`
   color: #ffffff;
   font-size: ${props => props.fontSize}px;
   font-family: 'roboto';
+  text-align: center;
 `

@@ -75,12 +75,8 @@ class MemeGenerator extends Component {
 
   onSubmitForm = event => {
     event.preventDefault()
-    const {
-      imgUrlInput,
-      topTextInput,
-      bottomTextInput,
-      fontSizeInput,
-    } = this.state
+    const {imgUrlInput, topTextInput, bottomTextInput, fontSizeInput} =
+      this.state
 
     this.setState({
       backgroundImgUrl: imgUrlInput,
@@ -91,12 +87,8 @@ class MemeGenerator extends Component {
   }
 
   renderForm = () => {
-    const {
-      imgUrlInput,
-      topTextInput,
-      bottomTextInput,
-      fontSizeInput,
-    } = this.state
+    const {imgUrlInput, topTextInput, bottomTextInput, fontSizeInput} =
+      this.state
     return (
       <FormContainer onSubmit={this.onSubmitForm}>
         <CustomLabel htmlFor="imageUrl">Image URL</CustomLabel>
